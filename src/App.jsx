@@ -1,11 +1,15 @@
-import Header from "./components/Header"
+import { Provider } from "react-redux";
+import Header from "./components/Header";
+import appStore from "./store";
 
 function App() {
   return (
-    <div>
-      <Header/>
-    </div>
-  )
+    <Provider store={appStore}>
+      <div>
+        <Header />
+      </div>
+    </Provider>
+  );
 }
 
-export default App
+export default App;

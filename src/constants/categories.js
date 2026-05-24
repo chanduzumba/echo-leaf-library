@@ -1,0 +1,27 @@
+const categories = [
+  "Fiction",
+  "Non-Fiction",
+  "Sci-Fi",
+  "Romance",
+  "Biography",
+  "Memoir",
+  "Historical Fiction",
+  "Fantasy",
+  "Thriller",
+  "Mystery",
+  "Post-Apocalyptic",
+  "Young Adult",
+  "Adventure",
+  "Science",
+  "Cooking",
+  "Business",
+  "Psychology",
+  "Spirituality",
+  "Philosophy",
+  "Design",
+  "Children",
+  "Literary Fiction",
+  "History",
+];
+
+export default categories;
