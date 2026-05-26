@@ -6,9 +6,11 @@ import appStore from "./store";
 function App() {
   return (
     <Provider store={appStore}>
-      <div>
+      <div className="min-h-screen bg-slate-950 text-slate-100">
         <Header />
-        <Outlet />
+        <main className="pt-24">
+          <Outlet />
+        </main>
       </div>
     </Provider>
   );
