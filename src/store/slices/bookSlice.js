@@ -6,17 +6,22 @@ const bookSlice = createSlice({
     initialState: {
         allBooks: books,
         filteredBooks: [],
+        popularBooks: books.filter((book) => book.rating >= 4.5),
     },
     reducers: {
         addBooks: (state,action) => {
             state.allBooks.unshift(action.payload)
         },
-        filteredBooks: (state, action) => {
-            state.filteredBooks = state.allBooks.filter(book => book.category === action.payload.category)
+        filterBooks: (state, action) => {
+            const categoryToFilter = action.payload.toLowerCase();
+            state.filteredBooks = state.allBooks.filter(book => book.category.toLowerCase() === categoryToFilter)
         },
+        clearFilter: (state, action) => {
+            state.filteredBooks = []
+        }
     }
 })
 
-export const { addBooks, filteredBooks } = bookSlice.actions
+export const { addBooks, filterBooks, clearFilter } = bookSlice.actions
 
 export default bookSlice.reducer
