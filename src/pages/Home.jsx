@@ -16,7 +16,7 @@ function Home() {
     <div className="min-h-screen bg-slate-950 py-8">
       <div className="max-w-7xl mx-auto px-4">
         {/* Hero Section */}
-        <div className="mb-8 bg-gradient-to-r from-slate-900 via-slate-800 to-sky-900 text-white rounded-lg p-8 shadow-2xl shadow-slate-900/40">
+        <div className="mb-8 bg-linear-to-r from-slate-900 via-slate-800 to-sky-900 text-white rounded-lg p-8 shadow-2xl shadow-slate-900/40">
           <h1 className="text-4xl font-bold mb-2">Welcome to Echo Leaf Online Library</h1>
           <p className="text-sky-200 text-lg">
             Discover books across all categories
@@ -94,7 +94,7 @@ function Home() {
 
         {/* Popular Books Section */}
         <div className="pl-4">
-          <h2 className="text-2xl font-bold text-slate-100 mb-6">Popular Books</h2>
+          <h2 className="text-2xl font-bold text-slate-100 mb-6 text-center">Popular Books</h2>
           <BookList />
         </div>
       </div>
