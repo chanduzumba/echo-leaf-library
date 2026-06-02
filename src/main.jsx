@@ -9,10 +9,12 @@ import BookDetails from "./pages/BookDetails.jsx";
 import BookList from "./components/BookList.jsx";
 import AddBook from "./components/AddBook.jsx";
 import BrowseBooks from "./pages/BrowseBooks.jsx";
+import PageNotFound from "./components/PageNotFound.jsx";
 
 const router = createBrowserRouter([{
   path: "/",
   element: <App />,
+  errorElement: <PageNotFound />,
   children: [
     {
       index: true,
@@ -20,7 +22,11 @@ const router = createBrowserRouter([{
     },
     {
       path: "/books/:category",
-      element: <BookList />,
+      element: <BrowseBooks />,
+    },
+    {
+      path: 'books',
+      element: <BrowseBooks />
     },
     {
       path: "/book/:id",
@@ -30,10 +36,10 @@ const router = createBrowserRouter([{
       path: "/add",
       element: <AddBook />,
     },
-    {
-      path: "/browse",
-      element: <BrowseBooks />,
-    },
+    // {
+    //   path: "/browse",
+    //   element: <BrowseBooks />,
+    // },
   ],
 }]);
 

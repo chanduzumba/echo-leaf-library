@@ -1,16 +1,115 @@
-# React + Vite
+#  Echo Leaf Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive online library web application built to explore, organize, and discover books with a clean user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Features
 
-## React Compiler
+-  Browse books collection
+-  Search functionality
+-  Popular / Category Based books
+-  Add new book
+-  Responsive modern UI
+-  Fast and lightweight
+-  Mobile-friendly design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- HTML5
+- CSS3
+- JavaScript
+- React.js
+- Redux Toolkit
+- Tailwind CSS
+
+---
+
+##  Project Structure
+
+```bash
+echo-leaf-library/
+│
+├── src/
+│   ├── components/
+├──     ├── AddBook.jsx
+├──     ├── Book.jsx
+├──     ├── BookList.jsx
+├──     ├── Header.jsx
+│   ├── pages/
+├──     ├── BookDetails.jsx
+├──     ├── BrowseBooks.jsx
+├──     ├── Home.jsx
+├── ├── store/
+├──     ├── slices/
+├──         ├── bookSlice.js
+├──     ├── index.js
+├── ├── utils/
+├──     ├── books.js
+│   ├── App.jsx
+│   └── index.jsx
+│
+├── package.json
+├── index.html
+└── README.md
+
+## Preview
+
+![Echo Leaf Welcome Screenshot](./screenshots/echoLeaf.png)
+![Echo Leaf Dashboard](./screenshots/dashboardEchoLeaf.png)
+
+## Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/chanduzumba/echo-leaf-library.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd echo-leaf-library
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The app will run on:
+
+```bash
+http://localhost:5173
+```
+
+## Learning Outcomes
+
+Through this project, I practiced:
+
+- React component structure
+- State management using Hooks
+- Event handling
+- Conditional rendering
+- Responsive UI development
+- Redux Store Management
+- Routing for SPA using React Router DOM
+
+
+## Author
+
+Chandrika Prakash
+
+- GitHub: https://github.com/chanduzumba
+- LinkedIn: https://www.linkedin.com/in/chandrika-prakash-06723a266/
+- Check it out live on : https://echo-leaf-library.vercel.app/
+

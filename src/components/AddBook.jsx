@@ -40,8 +40,8 @@ function AddBook() {
       type: 'success'
     });
     setTimeout(() => {
-      navigate('/browse');
-    }, 2000);
+      navigate('/books');
+    }, 1000);
   };
 
   return (
@@ -150,6 +150,7 @@ function AddBook() {
                 onChange={handleChange}
                 className="w-full bg-slate-800 border border-slate-700 text-slate-100 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cyan-500"
                 placeholder="https://example.com/image.jpg"
+                required
               />
             </div>
 
@@ -164,6 +165,7 @@ function AddBook() {
                 onChange={handleChange}
                 className="w-full bg-slate-800 border border-slate-700 text-slate-100 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cyan-500"
                 placeholder="https://example.com"
+                required
               />
             </div>
 

@@ -4,14 +4,17 @@ import { Link, useLocation, useParams } from "react-router-dom";
 import Book from "./Book";
 import LoadingSpinner from "./LoadingSpinner";
 import { filterBooks, clearFilter } from "../store/slices/bookSlice";
+import categories from "../constants/categories";
 
 function BookList({ titleQuery = '', authorQuery = '' }) {
+  // Redux store hooks for book data and filter state
   const dispatch = useDispatch();
   const { allBooks, filteredBooks, popularBooks } = useSelector((store) => store.books);
   const location = useLocation();
   const params = useParams();
   const [isLoading, setIsLoading] = useState(false);
 
+  // Update filtered books when the category route parameter changes
   useEffect(() => {
     if (params.category) {
       dispatch(filterBooks(params.category));
@@ -27,7 +30,8 @@ function BookList({ titleQuery = '', authorQuery = '' }) {
     return () => clearTimeout(timer);
   }, [titleQuery, authorQuery]);
 
-  const books = location.pathname === '/' ? popularBooks : ((location.pathname === '/browse') ? allBooks : filteredBooks);
+  // Choose the active book list depending on the current route
+  const books = location.pathname === '/' ? popularBooks : (params.category ? filteredBooks : allBooks);
 
 
   // Filter books by title and author queries
@@ -42,17 +46,7 @@ function BookList({ titleQuery = '', authorQuery = '' }) {
 
   return (
     <div className="w-full">
-      {params.category && (
-        <div className="mb-6 flex flex-col justify-center items-center text-slate-100">
-          <h2 className="mb-4 text-2xl font-bold capitalize">
-            {params.category} Books
-          </h2>
-          <Link to="/" className="inline-block text-cyan-400 hover:text-cyan-200 font-medium">
-            ← Back to Home
-          </Link>
-        </div>
-      )}
-
+      {/* Show spinner while search/filter logic is loading */}
       {isLoading ? (
         <LoadingSpinner />
       ) : (

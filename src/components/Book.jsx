@@ -2,7 +2,7 @@
 function Book({ book }) {
   const { imageLink, title, description, author, rating } = book;
   return (
-    <div className="h-full bg-slate-900 rounded-3xl shadow-xl hover:shadow-2xl transition-shadow overflow-hidden flex flex-col border border-slate-800">
+    <div className="h-full bg-slate-900 rounded-3xl shadow-xl hover:shadow-2xl hover:scale-90  transition-all overflow-hidden flex flex-col border border-slate-800">
       <div className="overflow-hidden bg-slate-800 aspect-4/5 sm:aspect-3/4">
         <img
           src={imageLink}

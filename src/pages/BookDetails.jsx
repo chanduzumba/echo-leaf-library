@@ -69,10 +69,10 @@ function BookDetails() {
                     Learn More
                   </a>
                   <Link
-                    to="/browse"
+                    to="/books"
                     className="px-6 py-3 bg-slate-700 text-slate-100 rounded-2xl hover:bg-slate-600 transition-colors font-medium"
                   >
-                    Back to Books
+                    Back to Browse
                   </Link>
                 </div>
               </div>
@@ -87,7 +87,7 @@ function BookDetails() {
               The book you are looking for does not exist.
             </p>
             <Link
-              to="/browse"
+              to="/books"
               className="inline-block px-6 py-3 bg-cyan-600 text-slate-950 rounded-2xl hover:bg-cyan-500 transition-colors font-medium"
             >
               Back to Books

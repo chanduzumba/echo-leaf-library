@@ -4,9 +4,11 @@ import BookList from "../components/BookList";
 import categories from "../constants/categories";
 
 function Home() {
+  // Selected category for the home page dropdown
   const [selectedCategory, setSelectedCategory] = useState("Fiction");
   const navigate = useNavigate();
 
+  // Navigate to the selected category route
   const goToCategory = () => {
     const formattedCategory = selectedCategory.toLowerCase();
     navigate(`/books/${formattedCategory}`);
@@ -18,9 +20,13 @@ function Home() {
         {/* Hero Section */}
         <div className="mb-8 bg-linear-to-r from-slate-900 via-slate-800 to-sky-900 text-white rounded-lg p-8 shadow-2xl shadow-slate-900/40">
           <h1 className="text-4xl font-bold mb-2">Welcome to Echo Leaf Online Library</h1>
-          <p className="text-sky-200 text-lg">
-            Discover books across all categories
-          </p>
+          <img className="mt-6 mb-6 rounded-lg shadow-lg w-full h-50 object-cover animate-pulse transition-all duration-1000 hover:scale-105" src="https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlicmFyeSUyMGJvb2tzfGVufDB8fDB8fHww&w=1000&q=80" alt="Library" />
+          <Link to='/books'>
+            <p className="text-sky-200 text-lg hover:text-sky-400 transition-colors font-medium mt-4 inline-flex items-center gap-2">
+              Discover books across all categories <i className='fa-solid fa-arrow-right'></i>
+            </p>
+          </Link>
+          
         </div>
 
         {/* Category Selector */}
