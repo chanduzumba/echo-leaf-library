@@ -38,6 +38,7 @@ echo-leaf-library/
 ├──     ├── Book.jsx
 ├──     ├── BookList.jsx
 ├──     ├── Header.jsx
+├──     ├── PageNotFound.jsx
 │   ├── pages/
 ├──     ├── BookDetails.jsx
 ├──     ├── BrowseBooks.jsx
@@ -48,12 +49,15 @@ echo-leaf-library/
 ├──     ├── index.js
 ├── ├── utils/
 ├──     ├── books.js
+├── ├── constants/
+├──     ├── categories.js
 │   ├── App.jsx
 │   └── index.jsx
 │
 ├── package.json
 ├── index.html
 └── README.md
+```
 
 ## Preview
 

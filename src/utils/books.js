@@ -365,7 +365,7 @@ export const books = [
     author: 'Dr. Joe Dispenza',
     description: 'Combines science and spirituality to explore how people can transform their lives.',
     rating: 4.2,
-    imageLink: 'https://covers.openlibrary.org/b/isbn/9781401953113-M.jpg',
+    imageLink: 'https://images.blinkist.io/images/books/63b7dd1b87ad2d000880abb0/1_1/470.jpg',
     website: 'https://en.wikipedia.org/wiki/Becoming_Supernatural',
     category: 'Spirituality'
   },
@@ -435,7 +435,7 @@ export const books = [
     author: 'Stephen King',
     description: 'Part memoir, part masterclass on the craft of writing from a bestselling author.',
     rating: 4.6,
-    imageLink: 'https://covers.openlibrary.org/b/isbn/9780743455960-M.jpg',
+    imageLink: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFJG4xyKfkQVEIH2TpNBq0Hn3p8kMwtIfUvg&s',
     website: 'https://en.wikipedia.org/wiki/On_Writing',
     category: 'Memoir'
   },

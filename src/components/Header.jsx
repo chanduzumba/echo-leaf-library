@@ -15,6 +15,7 @@ function Header() {
           <Link to="/" className="no-underline">
             <h1 className="text-2xl font-bold hover:text-blue-100 transition-colors">
               <i className="fas fa-leaf"></i> Echo Leaf Library
+              <img src="/books-svgrepo-com.svg" alt="Logo" className="inline-block w-6 h-6 ml-2" />
             </h1>
           </Link>
 
