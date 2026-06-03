@@ -52,7 +52,7 @@ echo-leaf-library/
 ├── ├── constants/
 ├──     ├── categories.js
 │   ├── App.jsx
-│   └── index.jsx
+│   └── main.jsx
 │
 ├── package.json
 ├── index.html
